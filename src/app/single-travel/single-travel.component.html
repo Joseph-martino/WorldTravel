@@ -1,0 +1,23 @@
+<section>
+    <button (click)="onBackToTravelsList()">Retour à la liste des voyages</button>
+    <div class="travel-banner">
+        <img [src]="travel.images[travel.counter]" alt="{{ travel.country }}">
+        <div class="button-container">
+            <button (click)="onPreviousPicture()">&#x2039;</button>
+            <button (click)="onNextPicture()">&#x203A;</button>
+        </div>
+        <h2 class="banner-title"> {{ travel.country | uppercase}}, {{ travel.city }}</h2>
+    </div>
+    <div class="content-container">
+        <div class="content-box">
+            <h2>Description du voyage</h2>
+            <p>{{ travel.description }}</p>
+        </div>
+        <div class="content-box centered-text">
+            <h2>Détails du prix</h2>
+            <p> {{ travel.price | currency: 'EUR'}}</p>
+            <p><span>&#9996;</span> {{ travel.like }}</p>
+            <button [ngClass]="{redButton: buttonText === 'Je ne recommande pas'}" (click)="onRecommandTravelById()">{{ buttonText }}</button>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,66 @@
+button {
+    background-color: #2548E6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(#2548E6, 10%)
+      }
+}
+
+.redButton {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken( red, 10%)
+      }
+}
+
+
+.travel-banner {
+    position: relative;
+    img {
+        width: 100%;
+        height: 900px;
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+
+.banner-title {
+    position: absolute;
+    top:50%;
+    left: 40%;
+    color: white;
+    font-size: 50px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: beige;
+}
+
+.content-box {
+    width: 40%;
+}
+
+.centered-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

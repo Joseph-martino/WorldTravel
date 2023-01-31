@@ -1,0 +1,7 @@
+<div class="card">
+    <img [src]="travel.images[0]" alt="">
+    <h2>{{ travel.country | uppercase }}</h2>
+    <p>{{ travel.sentence }}</p>
+    <p>{{ travel.price | currency: 'EUR' }}</p>
+    <button (click)="onContinue()">En savoir plus</button>
+</div>
